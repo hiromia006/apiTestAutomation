@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'io.rest-assured:rest-assured:5.0.1'
+    testImplementation 'io.rest-assured:json-path:5.0.1'
+    testImplementation group: 'org.testng', name: 'testng', version: '7.5'
+    testImplementation group: 'com.thedeanda', name: 'lorem', version: '2.1'
+    testImplementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    testImplementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2.2'
+    testImplementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
+
+}
+
+test {
+    useTestNG()
+}
+
+test {
+    useTestNG() {
+        if (project.hasProperty('testng.suites')) {
+            project.property('testng.suites').toString().split(',').each { suite ->
+                suites 'src/test/resources/' + suite + '-suite.xml'
+            }
+        }
+    }
+
+}
