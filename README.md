@@ -1,7 +1,10 @@
 # Prepare API Testing Instance or Environment
 
-### Create Java(Gradle) Project in IntelliJ IDEA for API
+### Prerequisite software
+* [Download & Install JDK](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
+* [Download & Install IntelliJ IDEA Community Version](https://www.jetbrains.com/idea/download/)
 
+### Create Java(Gradle) Project in IntelliJ IDEA for API
 * Create Java(Gradle) Project in IntelliJ IDEA
 * Add Gradle Dependencies
     - [REST Assured](https://mvnrepository.com/artifact/io.rest-assured/rest-assured)
