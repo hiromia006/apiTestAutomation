@@ -45,14 +45,12 @@ public class CreateUser extends BaseApiTest {
         JSONObject jsonObject = new JSONObject(stringObjectMa);
 
         given()
-                .header("Content-type", "application/json")
-                .accept(ContentType.JSON)
-                .contentType(ContentType.JSON)
+                .spec(requestSpecification())
                 .body(jsonObject.toJSONString())
                 .log().uri()
                 .log().body()
                 .when()
-                .patch("/users/2")
+                .post("/users/2")
                 .then()
                 .statusCode(200)
                 .log().body()
@@ -67,14 +65,12 @@ public class CreateUser extends BaseApiTest {
         String name = LoremIpsum.getInstance().getTitle(1);
 
         given()
-                .header("Content-type", "application/json")
-                .accept(ContentType.JSON)
-                .contentType(ContentType.JSON)
+                .spec(requestSpecification())
                 .body(new UserData(name, "leader"))
                 .log().uri()
                 .log().body()
                 .when()
-                .patch("/users/2")
+                .post("/users/2")
                 .then()
                 .statusCode(200)
                 .log().body()
