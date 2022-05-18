@@ -1,4 +1,4 @@
-package in.reqres.qa.test.restApi.pojo;
+package in.reqres.qa.test.restApi.pojo.write;
 
 
 import com.fasterxml.jackson.annotation.JsonInclude;

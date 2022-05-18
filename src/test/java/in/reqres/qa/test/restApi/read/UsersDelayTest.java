@@ -2,7 +2,7 @@ package in.reqres.qa.test.restApi.read;
 
 
 import in.reqres.qa.test.restApi.BaseApiTest;
-import in.reqres.qa.test.restApi.pojo.UsersDelayData;
+import in.reqres.qa.test.restApi.pojo.read.UsersDelayData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

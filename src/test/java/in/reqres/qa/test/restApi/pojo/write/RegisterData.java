@@ -1,7 +1,9 @@
-package in.reqres.qa.test.restApi.pojo;
+package in.reqres.qa.test.restApi.pojo.write;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class RegisterData {
     @JsonProperty("email")
     private String email;
@@ -13,6 +15,11 @@ public class RegisterData {
         this.email = email;
         this.password = password;
     }
+
+    public RegisterData(String email) {
+        this.email = email;
+    }
+
 
     public String getEmail() {
         return email;

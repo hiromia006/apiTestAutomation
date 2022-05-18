@@ -1,4 +1,4 @@
-package in.reqres.qa.test.restApi.pojo;
+package in.reqres.qa.test.restApi.pojo.read;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

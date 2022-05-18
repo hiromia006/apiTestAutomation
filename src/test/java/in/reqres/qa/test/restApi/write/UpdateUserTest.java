@@ -2,7 +2,7 @@ package in.reqres.qa.test.restApi.write;
 
 import com.thedeanda.lorem.LoremIpsum;
 import in.reqres.qa.test.restApi.BaseApiTest;
-import in.reqres.qa.test.restApi.pojo.UserData;
+import in.reqres.qa.test.restApi.pojo.write.UserData;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;

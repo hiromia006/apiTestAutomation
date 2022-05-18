@@ -24,6 +24,7 @@
   * [JSON Path Finder](https://jsonpathfinder.com/)
   * [JSONPath Online Evaluator](https://jsonpath.com/)
   * [Extent Reports](https://www.extentreports.com/docs/versions/5/java/index.html)
+  * [TestNG](https://www.javatpoint.com/testng-tutorial)
 
 ### Run Test Case
   * **Run Test Case** - Go to desired Java Class where has Test Case, Right click of mouse on Test Case >> click on Run

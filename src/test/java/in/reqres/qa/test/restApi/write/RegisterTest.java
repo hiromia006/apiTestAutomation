@@ -3,7 +3,7 @@ package in.reqres.qa.test.restApi.write;
 
 import com.thedeanda.lorem.LoremIpsum;
 import in.reqres.qa.test.restApi.BaseApiTest;
-import in.reqres.qa.test.restApi.pojo.RegisterData;
+import in.reqres.qa.test.restApi.pojo.write.RegisterData;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class RegisterTest extends BaseApiTest {
 
@@ -74,4 +75,24 @@ public class RegisterTest extends BaseApiTest {
                 .statusCode(200)
                 .and().log().body();
     }
+
+    @Test
+    public void testRegisterShouldFail() {
+        String email = LoremIpsum.getInstance().getEmail();
+
+        given()
+                .spec(requestSpecification())
+                .body(new RegisterData(email))
+                .log().uri()
+                .log().body()
+                .when()
+                .post("/register")
+                .then()
+                .statusCode(400)
+                .and().log().body()
+                .body("error", equalTo("Missing password"));
+    }
+
+
+
 }
