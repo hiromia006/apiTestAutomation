@@ -10,12 +10,24 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'io.rest-assured:rest-assured:5.0.1'
-    testImplementation 'io.rest-assured:json-path:5.0.1'
-    testImplementation group: 'org.testng', name: 'testng', version: '7.5'
-    testImplementation group: 'com.thedeanda', name: 'lorem', version: '2.1'
-    testImplementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
-    testImplementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.2.2'
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    testImplementation 'io.rest-assured:rest-assured:5.3.0'
+
+    // https://mvnrepository.com/artifact/io.rest-assured/json-path
+    testImplementation 'io.rest-assured:json-path:5.3.0'
+
+    // https://mvnrepository.com/artifact/org.testng/testng
+    testImplementation 'org.testng:testng:7.8.0'
+
+    // https://mvnrepository.com/artifact/com.thedeanda/lorem
+    testImplementation 'com.thedeanda:lorem:2.1'
+
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    testImplementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.15.1'
+
     testImplementation group: 'com.aventstack', name: 'extentreports', version: '5.0.9'
 
 }
