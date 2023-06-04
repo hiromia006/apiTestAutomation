@@ -1,4 +1,4 @@
-package testcases;
+package com.jsonServer.restApi;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.BeforeMethod;

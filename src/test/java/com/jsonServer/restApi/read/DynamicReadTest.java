@@ -1,6 +1,6 @@
-package testcases.read;
+package com.jsonServer.restApi.read;
 
-import com.jsonSever.testcases.BasePublicApiTest;
+import com.jsonServer.restApi.BasePublicApiTest;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
