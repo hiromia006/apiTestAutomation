@@ -26,6 +26,19 @@
   * [Extent Reports](https://www.extentreports.com/docs/versions/5/java/index.html)
   * [TestNG](https://www.javatpoint.com/testng-tutorial)
 
+
+### Best Demo API for Automation practice
+* [Dummy Rest API Example](http://dummy.restapiexample.com/)
+* [Go REST](https://gorest.co.in/)
+* [reqres.in](https://reqres.in/)
+* [Simple Grocery Store API](https://github.com/vdespa/Postman-Complete-Guide-API-Testing/blob/main/simple-grocery-store-api.md)
+* [Fakerestapi](https://fakerestapi.azurewebsites.net/)
+
+
+### Swagger API Demo Sites for Automation practice
+* [Simple Grocery Store API](https://github.com/vdespa/Postman-Complete-Guide-API-Testing/blob/main/simple-grocery-store-api.md)
+* [Fakerestapi](https://fakerestapi.azurewebsites.net/)
+
 ### Run Test Case
   * **Run Test Case** - Go to desired Java Class where has Test Case, Right click of mouse on Test Case >> click on Run
   * **Run XML File** - After create TestNG file, Right click of mouse on TestNG xml >> click on Run
