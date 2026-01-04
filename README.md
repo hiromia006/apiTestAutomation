@@ -32,7 +32,7 @@
 * [Go REST](https://gorest.co.in/)
 * [reqres.in](https://reqres.in/)
 * [Simple Grocery Store API](https://github.com/vdespa/Postman-Complete-Guide-API-Testing/blob/main/simple-grocery-store-api.md)
-* [Fakerestapi](https://fakerestapi.azurewebsites.net/)
+* [Fakerestapi](https://fakestoreapi.com/docs)
 
 
 ### Swagger API Demo Sites for Automation practice
